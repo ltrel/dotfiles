@@ -63,6 +63,7 @@ alias ls='ls --color=auto'
 alias sudo='sudo '
 alias p='sudo pacman '
 alias vim=nvim
+alias ls=exa
 alias susp='systemctl suspend'
 alias gs='git status'
 alias chd='cd /media/$(whoami)/HDD'

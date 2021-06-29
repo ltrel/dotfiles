@@ -71,3 +71,8 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 PATH=$PATH:~/.dotnet/tools:~/.local/bin
+
+# HOME and END key fixes
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char

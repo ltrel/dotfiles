@@ -70,7 +70,7 @@ alias chd='cd /media/$(whoami)/HDD'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-PATH=$PATH:~/.dotnet/tools:~/.local/bin
+PATH=$PATH:~/.dotnet/tools:~/.local/bin:~/.cargo/bin
 
 # HOME and END key fixes
 bindkey  "^[[H"   beginning-of-line

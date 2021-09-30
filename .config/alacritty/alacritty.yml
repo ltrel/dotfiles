@@ -1,14 +1,19 @@
 font:
-    size: 11
-    normal:
-        family: Go Mono
-        style: Regular
-    bold:
-        family: Go Mono
-        style: Bold
-    italic:
-        family: Go Mono
-        style: italic
+  size: 11
+  normal:
+    family: Go Mono
+    style: Regular
+  bold:
+    family: Go Mono
+    style: Bold
+  italic:
+    family: Go Mono
+    style: italic
+
+window:
+  padding:
+    x: 4
+    y: 4
 
 # Colors (Gruvbox dark)
 colors:

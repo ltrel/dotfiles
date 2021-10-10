@@ -1,0 +1,5 @@
+configuration {
+	modi: "window,drun,run,ssh,combi";
+}
+
+@import "~/.cache/wal/colors-rofi-dark"

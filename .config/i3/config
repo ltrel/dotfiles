@@ -10,7 +10,6 @@ exec --no-startup-id yakuake
 
 # Machine specific
 exec --no-startup-id xinput --set-prop 'PixArt Microsoft USB Optical Mouse' 'libinput Accel Profile Enabled' 0, 1
-exec --no-startup-id xrandr --output HDMI-0 --off
 
 # Variable setup
 set $mod Mod4

@@ -7,7 +7,7 @@ autoload -U colors && colors
 # History in cache directory:
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.cache/zsh_history
 
 # Completion
 autoload -U compinit && compinit -u
@@ -18,6 +18,8 @@ zmodload zsh/complist
 compinit
 # Include hidden files.
 _comp_options+=(globdots)		
+# Proper completion on aliased commands
+setopt complete_aliases
 
 # Auto CD using directory name
 setopt autocd
@@ -71,6 +73,7 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 PATH=$PATH:~/.dotnet/tools:~/.local/bin:~/.cargo/bin:~/.local/share/gem/ruby/3.0.0/bin
+export EDITOR=nvim
 
 # HOME and END key fixes
 bindkey  "^[[H"   beginning-of-line

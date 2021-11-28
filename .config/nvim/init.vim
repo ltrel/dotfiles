@@ -1,8 +1,3 @@
-"Plugins
-call plug#begin('~/.vim/plugged')
-Plug 'sainnhe/gruvbox-material'
-call plug#end()
-
 "Misc
 set nocompatible
 set backspace=indent,eol,start
@@ -44,14 +39,7 @@ set relativenumber
 set showmatch
 syntax enable
 set scrolloff=10
-"Use truecolor if supported
-if has('termguicolors')
-    set termguicolors
-endif
 set background=dark
-let g:gruvbox_material_background = 'medium'
-let g:gruvbox_material_palette = 'mix'
-colorscheme gruvbox-material
 
 "Mappings
 let mapleader=","

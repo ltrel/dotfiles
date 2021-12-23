@@ -75,7 +75,11 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 PATH=$PATH:~/.dotnet/tools:~/.local/bin:~/.cargo/bin:~/.local/share/gem/ruby/3.0.0/bin
 export EDITOR=nvim
 
-# HOME and END key fixes
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey  "^[[3~"  delete-char
+# Navigation key fixes
+bindkey "^[[H"      beginning-of-line  # Home
+bindkey "^[[F"      end-of-line        # End
+bindkey "^[[3~"     delete-char        # Delete
+bindkey "^[[1;5C"   forward-word       # Ctrl-Right
+bindkey "^[[1;5D"   backward-word      # Ctrl-Left
+bindkey "^H"        backward-kill-word # Ctrl-Backspace
+bindkey "^[[3;5~"   kill-word          # Ctrl-Delete

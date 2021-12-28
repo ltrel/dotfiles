@@ -83,3 +83,6 @@ bindkey "^[[1;5C"   forward-word       # Ctrl-Right
 bindkey "^[[1;5D"   backward-word      # Ctrl-Left
 bindkey "^H"        backward-kill-word # Ctrl-Backspace
 bindkey "^[[3;5~"   kill-word          # Ctrl-Delete
+
+## Add kdesrc-build to PATH
+export PATH="$HOME/kde/src/kdesrc-build:$PATH"
